@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Learn git and github</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/leo.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+
+		<div class="slides">
+<!-- page1 -->
+		<section data-markdown>
+   			 <script type="text/template">
+		     #*Learn git and*
+		     #*github*
+		     ###*Git* 菜鸟饭团
+
+						<p>
+              <small>Created by <a href="http://code.leozhang2018.me">Leozhang2018</a> /
+              <a href="http://twitter.com/leozhang2018">@leozhang2018</a>
+             </small>
+             </p>
+			</script>
+		</section>
+
+<!-- page2 -->
+		<section data-markdown>
+   			 <script type="text/template">
+		     <img src="attach/leozhang2018.png" style="width:150px;
+		     border-radius:50%;"/>
+		     ####leozhang2018
+		     ###*Front-End Developer*
+		     <!-- .element: class="fragment" -->
+		     <small>
+		     <a href="http://code.leozhang2018.me">Blog</a> /
+		     <a href="http://github.com/leozhang2018">Github</a> /
+		     <a href="http://www.zhihu.com/people/zhang-leo-2018">知乎</a> /
+		     <a href="http://www.v2ex.com/member/leozhang">V2ex</a>
+			</small>
+			</script>
+		</section>
+
+		<!-- Package controls -->
+							<section data-markdown>
+									<script type="text/template">
+							## *Version control*
+
+							版本控制
+
+							</script>
+							</section>
+
+
+							<section data-markdown>
+								<script type="text/template">
+									###For example:
+
+									<br>
+
+									版本 |  用户  | 说明 |  日期
+									-----|------- | ------|-------|-------
+									V1.0.0: | *Tom Hanks*  | <small>初始化重构代码库</small> | May 10
+									V1.0.1: | *James Bond*  | <small>增加支付模块</small> | Jun 13
+									V1.0.2: | *Neo*  | <small>修复交互模块漏动</small> | Jul 15
+									V1.0.2: | *隔壁老王*  | <small>垂死病中惊坐起,哥还有Bug没De完</small> | Jul 18
+
+									<br>
+
+							</script>
+							</section>
+
+
+
+							<section data-markdown>
+									<script type="text/template">
+							### 什么是版本控制
+
+							- 记录文件变化
+							<!--.element: class="fragment"-->
+							- 查阅版本修订
+							<!--.element: class="fragment"-->
+							- A system
+							<!--.element: class="fragment"-->
+
+							</script>
+
+							</section>
+
+			<section data-markdown>
+							<script type="text/template">
+							<img src="attach/lvs.png" style="width:400px;">
+
+							###本地版本控制系统
+							*Local Version Control System*
+							</script>
+			</section>
+
+
+			<section data-markdown>
+							<script type="text/template">
+							<img src="attach/cvs.png" style="width:400px;">
+
+							###集中化版本控制系统
+							*Centralized Version Control System*
+							</script>
+			</section>
+
+
+			<section data-markdown>
+							<script type="text/template">
+							<img src="attach/dvs.png" style="width:350px;">
+
+							###分布式版本控制系统
+							*Distributed Version Control System*
+							</script>
+			</section>
+
+<!-- 前世今生 -->
+
+
+			<section data-markdown>
+   			 <script type="text/template">
+			## History of Git
+			<img src="attach/lightgit.png" style="width:100px; border-radius:50%"/>
+
+			前世今生
+				</script>
+		</section>
+
+		<section data-markdown data-background="attach/kernel.png"
+		style="background:rgba(0,0,0,0.8);"
+		>
+				<script type="text/template">
+					##A part of
+					##*Linux kernel* branch
+				</script>
+	</section>
+
+	<section data-markdown>
+				<script type="text/template">
+				<img src="attach/bitkeeper.png" style="width:150px;height:150px; border-radius:50%">
+
+				<small>The origin of distributed version control </small>
+
+				Linux 内核开发团队使用 *Bitkeeper*
+
+				*2002~2005*
+		</script>
+	</section>
+
+		<section data-markdown>
+   			 <script type="text/template">
+					<img src="attach/Andrew.png" style="width:200px;height:200px; border-radius:50%">
+
+					###Andrew Tridgell
+
+					*Samba* 软件作者
+
+					*Rsync* 算法发明者
+			</script>
+		</section>
+
+		<section data-markdown>
+					<script type="text/template">
+					<img src="attach/Linus.png" style="width:350px;height:200px; ">
+
+					<blockquote><small>" I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'Git' "</small></blockquote>
+					<blockquote><small>“我是个自负的混蛋,所有的项目都是围绕我自己命名的,之前是 'Linux' 现在则是 'Git' ”</small></blockquote>
+					*-- Linus Benedict Torvalds*
+			</script>
+		</section>
+
+
+
+<!-- page5 -->
+			<section data-markdown>
+					<script type="text/template">
+			### *Why git ?*
+			- Compatibility（CommonJS, AMD, ES6...）
+			<!--.element: class="fragment"-->
+			- Code Splitting
+			<!--.element: class="fragment"-->
+			- Loader/Transform
+			<!--.element: class="fragment"-->
+			- Replace grunt or gulp
+			<!--.element: class="fragment"-->
+
+			</script>
+			</section>
+<!-- 2015-7-12 Page14-->
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
