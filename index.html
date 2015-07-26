@@ -181,8 +181,8 @@
 		</script>
 	</section>
 
-		<section data-markdown>
-   			 <script type="text/template">
+					<section data-markdown>
+   			 		<script type="text/template">
 					<img src="attach/Andrew.png" style="width:200px;height:200px; border-radius:50%">
 
 					###Andrew Tridgell
@@ -190,8 +190,8 @@
 					*Samba* 软件作者
 
 					*Rsync* 算法发明者
-			</script>
-		</section>
+					</script>
+					</section>
 
 		<section data-markdown>
 					<script type="text/template">
@@ -200,7 +200,7 @@
 					<blockquote><small>" I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'Git' "</small></blockquote>
 					<blockquote><small>“我是个自负的混蛋,所有的项目都是围绕我自己命名的,之前是 'Linux' 现在则是 'Git' ”</small></blockquote>
 					*-- Linus Benedict Torvalds*
-			</script>
+					</script>
 		</section>
 
 
@@ -209,21 +209,317 @@
 			<section data-markdown>
 					<script type="text/template">
 			### *Why git ?*
-			- Compatibility（CommonJS, AMD, ES6...）
+			- 本地化的版本管理 (*完全分布式*)
 			<!--.element: class="fragment"-->
-			- Code Splitting
+
+			- 不污染子目录的 *track* 方式 (SVN每个子目录都要扔.svn)
 			<!--.element: class="fragment"-->
-			- Loader/Transform
+
+			- 强大的分支管理功能 (*允许上千个并行开发的分支*)
 			<!--.element: class="fragment"-->
-			- Replace grunt or gulp
+
+			- 轻量简洁,唯 *快* 不破 (*简单的设计*)
 			<!--.element: class="fragment"-->
 
 			</script>
 			</section>
-<!-- 2015-7-12 Page14-->
 
+<!-- github -->
+
+			<section data-markdown>
+				<script type="text/template">
+				<img src="attach/filmtocat.png" style="width:300px;height:300px">
+
+				##*Github* 新的篇章				
+
+				</script>
+			</section>
+
+			<section data-markdown>
+			<script type="text/template">
+			### *What is github?*
+			- 由GitHub公司（曾称 Logical Awesome）的开发者使用 *Ruby on Rails* 所开发
+			<!--.element: class="fragment"-->
+
+			- 用来存放使用 Git 版本控制的软件代码和内容项目
+			<!--.element: class="fragment"-->
+
+			- 提供代码社交化功能的代码托管网站
+			<!--.element: class="fragment"-->
+
+			- 全世界最大的 *同性交友* 网站
+			<!--.element: class="fragment"-->
+
+			</script>
+			</section>
+
+
+				<section data-markdown>
+				<script type="text/template">
+				<img src="attach/gitrebase.png">
+
+				###Git rebase
 				
 
+				</script>
+				</section>
+
+				<section data-markdown>
+				<script type="text/template">
+				<img src="attach/githubinvent.png">
+
+				*2008-02* Github Inc 的服务正式上线
+				
+
+				</script>
+				</section>
+<!-- 代码托管 -->
+				<section data-markdown>
+				<script type="text/template">
+				### 提供代码托管服务的服务商
+				- Bitbucket
+				<!--.element: class="fragment"-->
+
+				- Google Code  (*2016-1-25*)
+				<!--.element: class="fragment"-->
+
+				- Gitcafe
+				<!--.element: class="fragment"-->
+
+				- Coding.net
+				<!--.element: class="fragment"-->
+
+				- Git@OSC
+				<!--.element: class="fragment"-->
+
+				- *Etc ...*
+				<!--.element: class="fragment"-->
+
+				</script>
+				</section>
+
+				<section data-markdown>
+				<script type="text/template">
+				## *Break time*
+				*5 mins*
+				</script>
+				</section>
+			<section>
+			<video width="1280" height="720" controls data-autoplay src="http://7u2eut.com1.z0.glb.clouddn.com/blogvideoWelcome%20to%20Project%20Jacquard.mp4"></video>
+			</section>
+
+			<section data-markdown>
+					<script type="text/template">
+			## 第一日 The Matrix
+			
+			###*Installation and configuration*
+
+			从安装和配置说起
+
+			</script>
+			</section>
+
+					<section data-markdown>
+                    <script type="text/template">
+                        以 Debian 系的 Ubuntu 为例
+                        ```
+                        $ Sudo apt-get update
+
+                        $ Sudo apt-get install git
+                        ```
+                        (注:非源码安装方式)
+
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+						<section data-markdown>
+                    	<script type="text/template">
+                    	关键配置文件:
+
+                        *~/.gitconfig*
+                        <!-- .element: class="fragment" -->
+
+                        *.git/config*
+						<!-- .element: class="fragment" -->
+
+                        */etc/gitconfig*
+                        <!-- .element: class="fragment" -->
+                    	</script>
+                		</section>
+
+				<section data-markdown>
+                    <script type="text/template">
+                        用户信息
+                        ```
+                        $ git config --global user.name "Leozhang2018"
+
+                        $ git config --global user.email leozhang2018@gmail.com
+                        ```
+                        
+                        (--global 参数读写 *~/.gitconfig* 配置文件)
+
+                        <!-- .element: class="fragment" -->
+
+                    </script>
+                </section>
+
+            <section data-markdown>
+			<script type="text/template">
+			### 其他配置方向
+			- 指定文本编辑器 (*Emacs* or *Vim*)
+			<!--.element: class="fragment"-->
+
+			- 差异分析工具
+			<!--.element: class="fragment"-->
+
+			- 外部的合并与比较工具
+			<!--.element: class="fragment"-->
+
+			- 格式化与空白
+			<!--.element: class="fragment"-->
+
+			</script>
+			</section>
+
+<!-- Demo -->
+            <section data-markdown>
+			<script type="text/template">
+			## *Demo time*
+
+			</script>
+			</section>
+
+
+<!-- Q&A -->
+			<section data-markdown>
+			<script type="text/template">
+			  # *Q&A*
+			  ###Any Questions?
+
+			</script>
+			</section>
+<!-- Open share -->
+
+			<section data-markdown data-transition="convex">
+			<script type="text/template">
+			## One more thing
+
+			###*Free share*
+			</script>
+			</section>
+
+<!-- you-get -->
+			<section data-markdown>
+							<script type="text/template">
+							###*you-get*
+							<img src="attach/youget.png" style="width:600px;">
+
+							<small>一个有趣而强大的命令行视频下载工具</small>
+
+							</script>
+			</section>
+
+				<section data-markdown>
+				<script type="text/template">
+				### *Supported Sites*
+				- Youtube
+				- Instagram
+				- Vimeo
+				- Youku
+				- Tudou
+				- Acfun & Bilibili
+				- 虾米 & 网易云音乐
+				- *Etc ...*
+
+				</script>
+				</section>
+
+
+			<section>
+			<video width="1280" height="720" controls data-autoplay src="http://7u2eut.com1.z0.glb.clouddn.com/TerminatorGenisysMovieOfficialTrailer.mp4"></video>
+			</section>
+
+<!-- summary -->
+            <section data-markdown>
+			<script type="text/template">
+			## *summary*
+			- History of Git
+			<!--.element: class="fragment"-->
+
+			- Installation and configuration
+			<!--.element: class="fragment"-->
+
+			- Github tutorial
+			<!--.element: class="fragment"-->
+
+			</script>
+			</section>
+
+			<section style="text-align: left;">
+			<h2>Reference</h2>
+			<p>
+			- <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰 Git 教程</a> <br>
+
+			- <a href="https://training.github.com/classes/">Github Training Class</a> <br>
+
+			- <a href="https://git-scm.com/book/zh/v1">Pro Git</a>
+			</p>
+			</section>
+
+			<section data-markdown>
+			<script type="text/template">
+			## *What is next ?*
+			- 分支管理的注意事项
+			<!--.element: class="fragment"-->
+
+			- 实际工作中利用分支进行开发的流程
+			<!--.element: class="fragment"-->
+
+			- Git 在其它环境中之 *Git in Zsh*
+			<!--.element: class="fragment"-->
+
+			- 变基(*Rebase*)
+			<!--.element: class="fragment"-->
+
+			- 初探 *Gitlab*
+			<!--.element: class="fragment"-->
+
+
+			</script>
+			</section>
+
+
+			<section data-transition="slide-in fade-out"> 
+			 <h2>See u next time</h2>
+			</section>
+
+			<section data-markdown data-transition="fade-in slide-out">
+			<script type="text/template">
+			<blockquote>" I'll be back"</blockquote>
+			   ### *--Terminator T-800*
+
+			</script>
+			</section>
+
+
+			<section style="text-align: left;">
+			<h1>THE END</h1>
+			<p>
+			- <a href="http://open.xiyouant.org/gitslide">Get this slide</a> <br>
+			- <a href="https://github.com/soimort/you-get">About you-get</a>
+			</p>
+			</section>
+<!-- 
+			<section data-markdown>
+             <script type="text/template">
+                        <img src="attach/QRcode.png" style="
+                            box-shadow: 2px 2px 23px 1px rgba(0, 0, 0, 0.68);
+                            width: 250px;
+                            height: 250px; " />
+                            </script>
+              </section> -->
+				
 			</div>
 
 		</div>
